@@ -39,30 +39,26 @@ product:
     meeting_owner: "TokenBurners founder"
 
 icp:
+  # Local Indian businesses with little or no digital presence (no website,
+  # unclaimed or thin Google listing): the pitch is a simple website, Google
+  # Business Profile, WhatsApp catalog / online ordering.
   industries:
-    - "SaaS"
-    - "Early-stage startup"
-    - "E-commerce"
-    - "Digital agency"
-    - "Fintech"
-  company_size: "1-50 employees"
+    - "Local retail shop"
+    - "Restaurant or cafe"
+    - "Salon or spa"
+    - "Clinic or dental practice"
+    - "Gym or coaching centre"
+    - "Boutique or garment shop"
+  company_size: "1-20 employees"
   titles:
+    - "Owner"
+    - "Proprietor"
     - "Founder"
-    - "Co-founder"
-    - "CEO"
-    - "CTO"
-    - "Head of Product"
+    - "Director"
+    - "Manager"
   geography:
     - "India"
-    - "United States"
-    - "United Kingdom"
-  # Roles that signal a company is in-market right now: a company hiring
-  # engineers it can't fill fast may want outside capacity.
-  hiring_signals:
-    - "Full Stack Developer"
-    - "Software Engineer"
-    - "Mobile App Developer"
-    - "React Developer"
+  hiring_signals: []
 
 channels:
   email:
