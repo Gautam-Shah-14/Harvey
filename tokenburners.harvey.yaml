@@ -1,0 +1,118 @@
+persona:
+  name: "Harvey"
+  company: "TokenBurners"
+  role: "Business Development"
+  email: "tokenburners2026@gmail.com"
+  linkedin: "linkedin.com/company/tokenburners-2026"
+  tone: "direct, friendly, engineer-to-founder; plain language, no hype"
+
+product:
+  name: "TokenBurners product & engineering studio"
+  description: >-
+    TokenBurners is a product and engineering studio in India (open to client
+    work worldwide). A team of engineers, from early-career to experienced,
+    builds web apps, cross-platform mobile apps and AI-powered features for
+    startups and growing teams. Clients work directly with the people writing
+    the code, and the team ships working software every week. Services: web
+    applications, mobile applications, AI and automation, product design,
+    cloud and DevOps, maintenance and support (including taking over existing
+    codebases). Stack: Next.js, React, TypeScript, React Native, Node.js,
+    PostgreSQL, Tailwind, AWS, Vercel, Docker.
+  pricing: "Fixed price for well-defined projects, or a weekly/monthly engagement for ongoing work. A real number is given after a scoping call."
+  key_benefits:
+    - "Weekly ships: working software you can click through, not a status call"
+    - "Direct access to the engineers building it, with no account managers in between"
+    - "One team from kickoff to handoff, with clean documented code built to be maintained"
+    - "Every stage is a visible ticket, plus support after launch and takeover of existing codebases"
+  objection_responses:
+    "too expensive": "Fair. Fixed-price scopes or a small weekly engagement keep the spend predictable, and a first scoping call costs nothing. Happy to size it to what you actually need."
+    "already have a solution": "Makes sense. If you have a dev team or agency already, we often add capacity on a specific feature or take over maintenance. What's the one thing slowing you down right now?"
+    "not interested": "No worries at all. Mind if I ask how you handle product engineering today?"
+    "you are a young studio": "True, we're new, and that's why every project is visible week by week and you can see our first shipped product, StoryBurners, at storyburners.tokenburners.co.in."
+  offer:
+    primary: "Fixed-price project or weekly/monthly engineering engagement"
+    entry: "Free scoping call, with a first working build within the first week of a project"
+    goal: "book_call"
+    booking_method: "suggest_times"   # no calendar link yet: set booking_url and switch to calendar_link
+    booking_url: ""
+    meeting_duration: "20 minutes"
+    meeting_owner: "TokenBurners founder"
+
+icp:
+  industries:
+    - "SaaS"
+    - "Early-stage startup"
+    - "E-commerce"
+    - "Digital agency"
+    - "Fintech"
+  company_size: "1-50 employees"
+  titles:
+    - "Founder"
+    - "Co-founder"
+    - "CEO"
+    - "CTO"
+    - "Head of Product"
+  geography:
+    - "India"
+    - "United States"
+    - "United Kingdom"
+  # Roles that signal a company is in-market right now: a company hiring
+  # engineers it can't fill fast may want outside capacity.
+  hiring_signals:
+    - "Full Stack Developer"
+    - "Software Engineer"
+    - "Mobile App Developer"
+    - "React Developer"
+
+channels:
+  email:
+    enabled: true
+    provider: "gmail"          # gmail (recommended) | microsoft | smtp | instantly
+    max_daily_sends: 50
+    require_approval: true      # native: review in Outbox; Instantly: sending held
+    send_to_risky: false        # also send to catch-all domains (off = safest)
+    max_bounce_rate: 0.05       # pause all sending if bounces exceed this
+    # New sending domain? Set start_date to the day your warmup service went
+    # on: no cold email for min_days, then the cold cap climbs from
+    # start_sends by daily_increase a day up to max_daily_sends. Replies are
+    # never held. Gmail/Microsoft/SMTP only (Instantly has its own warmup).
+    # Check readiness any time with `harvey warmup`.
+    warmup:
+      start_date: ""            # YYYY-MM-DD; blank = no ramp
+      min_days: 14
+      start_sends: 5
+      daily_increase: 3
+      dkim_selector: ""         # only if your provider uses an unusual one
+  linkedin:
+    enabled: false             # explicit opt-in; credentials alone do not enable it
+    max_daily_connections: 20
+    max_daily_messages: 10
+
+usage:
+  max_daily_claude_percent: 80
+  heartbeat_interval_minutes: 15
+  quiet_hours:
+    start: "22:00"
+    end: "07:00"
+    timezone: "Asia/Kolkata"
+
+# Optional: check each new recipient with Precleared (precleared.dev) before
+# the first cold email: may cold marketing email go to this address under UK
+# PECR, US CAN-SPAM, Canada's CASL, Germany's UWG and France's rules? Any other
+# answer holds the email back, with the reason in the Outbox. One check per
+# address; 10 a day free without a key, 25 with a free key (PRECLEARED_API_KEY
+# in .env). Applies to the native providers (gmail, smtp). If all your prospects
+# are in one country, set prospect_country: Precleared uses it only when it can't
+# tell the country from the address, company records or the company's website.
+compliance:
+  # Added under every cold email (never replies). US law (CAN-SPAM) requires a
+  # postal address you receive mail at: a street address, PO box or virtual
+  # mailbox. Until it's set, cold email still sends, with a warning.
+  postal_address: ""
+  # Keep wording Harvey recognises as an opt-out ("no thanks", "unsubscribe").
+  opt_out_line: 'Not interested? Reply "no thanks" and I won''t email again.'
+  precleared:
+    enabled: false
+    sender_country: ""          # GB or US: where your business is based
+    address_source: "unknown"   # published | bought | scraped | given | unknown
+    prospect_country: ""        # optional, e.g. US if all your prospects are in one country

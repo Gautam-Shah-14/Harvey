@@ -1,68 +1,48 @@
 persona:
   name: "Harvey"
-  company: "TokenBurners"
+  company: "Your Company"
   role: "Business Development"
-  email: "tokenburners2026@gmail.com"
-  linkedin: "linkedin.com/company/tokenburners-2026"
-  tone: "direct, friendly, engineer-to-founder; plain language, no hype"
+  email: "harvey@yourcompany.com"
+  linkedin: "linkedin.com/in/harvey-yourcompany"
+  tone: "professional, consultative, confident"
 
 product:
-  name: "TokenBurners product & engineering studio"
-  description: >-
-    TokenBurners is a product and engineering studio in India (open to client
-    work worldwide). A team of engineers, from early-career to experienced,
-    builds web apps, cross-platform mobile apps and AI-powered features for
-    startups and growing teams. Clients work directly with the people writing
-    the code, and the team ships working software every week. Services: web
-    applications, mobile applications, AI and automation, product design,
-    cloud and DevOps, maintenance and support (including taking over existing
-    codebases). Stack: Next.js, React, TypeScript, React Native, Node.js,
-    PostgreSQL, Tailwind, AWS, Vercel, Docker.
-  pricing: "Fixed price for well-defined projects, or a weekly/monthly engagement for ongoing work. A real number is given after a scoping call."
+  name: "Your Product"
+  description: "Describe what your product does and who it's for"
+  pricing: "Starting at $X/mo"
   key_benefits:
-    - "Weekly ships: working software you can click through, not a status call"
-    - "Direct access to the engineers building it, with no account managers in between"
-    - "One team from kickoff to handoff, with clean documented code built to be maintained"
-    - "Every stage is a visible ticket, plus support after launch and takeover of existing codebases"
+    - "Benefit 1"
+    - "Benefit 2"
+    - "Benefit 3"
   objection_responses:
-    "too expensive": "Fair. Fixed-price scopes or a small weekly engagement keep the spend predictable, and a first scoping call costs nothing. Happy to size it to what you actually need."
-    "already have a solution": "Makes sense. If you have a dev team or agency already, we often add capacity on a specific feature or take over maintenance. What's the one thing slowing you down right now?"
-    "not interested": "No worries at all. Mind if I ask how you handle product engineering today?"
-    "you are a young studio": "True, we're new, and that's why every project is visible week by week and you can see our first shipped product, StoryBurners, at storyburners.tokenburners.co.in."
+    "too expensive": "I understand budget is important. Most of our clients see ROI within 30 days..."
+    "already have a solution": "That makes sense. Curious — what's the one thing you wish it did better?"
+    "not interested": "No worries at all. Mind if I ask what your current approach looks like?"
   offer:
-    primary: "Fixed-price project or weekly/monthly engineering engagement"
-    entry: "Free scoping call, with a first working build within the first week of a project"
-    goal: "book_call"
-    booking_method: "suggest_times"   # no calendar link yet: set booking_url and switch to calendar_link
-    booking_url: ""
-    meeting_duration: "20 minutes"
-    meeting_owner: "TokenBurners founder"
+    primary: ""                    # Main offer (e.g., "Monthly subscription starting at $99/mo")
+    entry: ""                      # Low-commitment entry (e.g., "14-day free trial", "Free audit")
+    goal: "book_call"              # Goal of outreach: book_call, start_trial, get_reply
+    booking_method: "calendar_link" # calendar_link, suggest_times, ask_preference
+    booking_url: ""                # Calendar link URL (if using calendar_link method)
+    meeting_duration: "15 minutes" # How long the call is
+    meeting_owner: ""              # Who takes the meeting (name or role)
 
 icp:
   industries:
     - "SaaS"
-    - "Early-stage startup"
-    - "E-commerce"
-    - "Digital agency"
-    - "Fintech"
-  company_size: "1-50 employees"
+    - "Marketing Agency"
+  company_size: "10-200 employees"
   titles:
-    - "Founder"
-    - "Co-founder"
-    - "CEO"
-    - "CTO"
-    - "Head of Product"
+    - "VP Marketing"
+    - "Head of Growth"
+    - "CMO"
+    - "Director of Marketing"
   geography:
-    - "India"
     - "United States"
-    - "United Kingdom"
-  # Roles that signal a company is in-market right now: a company hiring
-  # engineers it can't fill fast may want outside capacity.
-  hiring_signals:
-    - "Full Stack Developer"
-    - "Software Engineer"
-    - "Mobile App Developer"
-    - "React Developer"
+  # Roles that signal a company is in-market RIGHT NOW (a company hiring a
+  # "Head of Growth" is shopping for growth tooling). Used for careers-page
+  # scanning and job-board discovery. Empty = fall back to titles above.
+  hiring_signals: []
 
 channels:
   email:
@@ -94,7 +74,7 @@ usage:
   quiet_hours:
     start: "22:00"
     end: "07:00"
-    timezone: "Asia/Kolkata"
+    timezone: "America/New_York"
 
 # Optional: check each new recipient with Precleared (precleared.dev) before
 # the first cold email: may cold marketing email go to this address under UK
